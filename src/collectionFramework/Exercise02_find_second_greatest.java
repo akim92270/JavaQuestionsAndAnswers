@@ -25,5 +25,12 @@ public class Exercise02_find_second_greatest {
         ArrayList<Integer> uniquesL = new ArrayList<>(uniques);
         System.out.println(uniquesL.get(uniquesL.size()-2)); // 5 (Second from last)
         System.out.println(uniquesL.get(1)); // 5 (Second from first)
+
+        /*
+        Another way to eliminate a variable line
+        ArrayList<Integer> uniquesL = new ArrayList<>(new TreeSet<>(numbers));
+        System.out.println(uniquesL.get(uniquesL.size()-2)); //5
+        System.out.println(uniquesL.get(1)); //5
+         */
     }
 }
