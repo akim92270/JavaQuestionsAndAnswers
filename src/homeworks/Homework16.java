@@ -63,28 +63,33 @@ public class Homework16 {
         return stringArray;
     }
 
-    //Task-6 Work in-progress
-    public static void removeExtraSpaces(String s) {
-        String s2 = s.trim();
-        String[] news2 = s2.split(" ");
-        System.out.println(Arrays.toString(news2));
+    //Task-6
+    public static String removeExtraSpaces(String s) {
+        String[] str = s.trim().split(" ");
+        String sentence = "";
+        for (String s1 : str) {
+            if (!s1.isEmpty()) sentence += s1 + " ";
+        }
+        return sentence.substring(0,sentence.length()-1);
     }
 
     //Task-7
-    public static int[] add(int[] a, int[] b){
-        int[] greatest = new int[Math.max(a.length,b.length)];
-        int[] new1 = new int[greatest.length];
-        for (int i = 0; i < greatest.length; i++) {
-            if (a.length > i) {
-                new1[i] += a[i];
-            }
-            if (b.length > i) {
-                new1[i] += b[i];
-            }
-
-        }return new1;
+    public static int[] add(int[] n1, int[] n2){
+        for (int i = 0; i < Math.max(n1.length, n2.length); i++) {
+            if(n1.length > n2.length) n1[i] += n2[i];
+        }
+        return (n1.length > n2.length) ? n1: n2;
     }
 
+    //Task-8
+    public static int findClosestTo10(int[] arr){
+        int closest = Integer.MAX_VALUE;
+        Arrays.sort(arr);
+        for(int i= 1; i < arr.length; i++){
+            if(arr[i] != 10 && Math.abs(10 - arr[i]) < Math.abs(1 - closest)) closest = arr[i];
+        }
+        return (closest);
+    }
     public static void main(String[] args) {
         //Testing methods
         System.out.println("\n------------Task-1-----------\n");
