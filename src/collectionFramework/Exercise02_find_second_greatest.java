@@ -23,9 +23,7 @@ public class Exercise02_find_second_greatest {
         System.out.println(uniques); // [3, 5, 7]
 
         ArrayList<Integer> uniquesL = new ArrayList<>(uniques);
-        System.out.println(uniquesL.get(uniquesL.size()-2)); // 5
-        System.out.println(uniquesL.get(1)); // 5
-
-
+        System.out.println(uniquesL.get(uniquesL.size()-2)); // 5 (Second from last)
+        System.out.println(uniquesL.get(1)); // 5 (Second from first)
     }
 }
