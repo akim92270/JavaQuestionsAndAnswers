@@ -10,7 +10,10 @@ public class TreeMapPractice {
         studentAges.put("Torrie", 20);
         studentAges.put("Alona", 15);
         studentAges.put("Andrei", 25);
-        studentAges.put(null, 15);
+        //studentAges.put(null, 15); //pointerexception
+        studentAges.put("Guluzar", null);
+        studentAges.put("Melda", 15);
+        studentAges.put("Melda", 15);
 
         System.out.println(studentAges);
 
