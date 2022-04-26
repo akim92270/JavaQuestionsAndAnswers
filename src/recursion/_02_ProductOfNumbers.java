@@ -12,7 +12,7 @@ public class _02_ProductOfNumbers {
      */
 
     public static int recursiveMultiply(int n){
-        if(n > 0) return n * recursiveMultiply(n-1);
+        if(n > 1) return n * recursiveMultiply(n-1);
         return 1;
     }
 
