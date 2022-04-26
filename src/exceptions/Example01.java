@@ -8,8 +8,8 @@ public class Example01 {
         //How to handle the exception
         try {
             System.out.println(names[-5]); //ArrayIndexOutOfBoundsException
-        } catch (ArrayIndexOutOfBoundsException exception) {
-            System.out.println("An exception is caught");
+        } catch (Exception e) {
+            e.printStackTrace();
         }
         System.out.println("End of the program!");
     }
