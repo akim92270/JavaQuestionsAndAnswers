@@ -8,7 +8,7 @@ public class UnderstandingException {
         Unchecked exceptions = Runtime exceptions
          */
 
-        String name = "John";
+        String name = "John"; // 0, 1, 2, 3
 
         //How to handle the exception
         try {
