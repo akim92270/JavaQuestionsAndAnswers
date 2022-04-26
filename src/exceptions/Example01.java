@@ -9,7 +9,7 @@ public class Example01 {
         try {
             System.out.println(names[-5]); //ArrayIndexOutOfBoundsException
         } catch (Exception e) {
-            e.printStackTrace();
+            e.printStackTrace(); //handle a throw exception
         }
         System.out.println("End of the program!");
     }
