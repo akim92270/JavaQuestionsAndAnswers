@@ -20,9 +20,12 @@ public class CreateFile {
             System.out.println("Checking existence before creating file = " + myFile.exists()); //true
             System.out.println("File name is = " + myFile.getName());
             System.out.println("Absolute path of the file = " + myFile.getAbsolutePath());
+            System.out.println("Can file write = " + myFile.canWrite());
+            System.out.println("Can file read = " + myFile.canRead());
+            System.out.println("Size of file = " + myFile.length());
 
             Thread.sleep(5000);
-            myFile.delete();
+            System.out.println(myFile.delete());
 
         } catch (Exception e) {
             e.printStackTrace();

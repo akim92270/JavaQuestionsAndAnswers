@@ -140,7 +140,7 @@ public class Solutions {
      */
 
     public static String noDigits(String str){
-        return s
+        return str.replaceAll("[0-9]", "");
     }
 
     /* Question 6
