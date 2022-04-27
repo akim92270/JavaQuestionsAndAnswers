@@ -7,6 +7,8 @@ public class Example02 {
 
         try {
             //System.out.println(number / 3); //15
+            String s = null;
+            System.out.println(s.startsWith("abc")); //NullPointerException
             System.out.println(number / 0); //ArithmeticException
             System.out.println("abc".charAt(15)); //StringIndexOutOfBoundsException
         }
