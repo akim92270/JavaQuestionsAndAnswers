@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class ReadData {
     public static void main(String[] args) {
         /*
-        1. Create a new txt file called shoppingList
+        1. create a new txt file called shoppingList
         2. Write all items below
         Ice-cream
         Fruits
@@ -17,35 +17,40 @@ public class ReadData {
          */
 
         File file = new File("shoppingList.txt");
+
         try{
             FileWriter fileWriter = new FileWriter("shoppingList.txt");
-            fileWriter.write("Ice-cream");
-            fileWriter.write("Fruits");
-            fileWriter.write("Pen");
-            fileWriter.write("Paper");
+            fileWriter.write("Ice-Cream\n");
+            fileWriter.write("Fruits\n");
+            fileWriter.write("Pen\n");
+            fileWriter.write("Paper\n");
             fileWriter.write("Milk");
             fileWriter.close();
+            Thread.sleep(1000);
+
 
             //How to read information from a file
-            Scanner scan = new Scanner(file);
+            Scanner scanner = new Scanner(file);
 
             /*
-            for (int i = 0; scan.hasNextLine(); i++){
+            for (int i = 1; scanner.hasNextLine(); i++) {
                 Thread.sleep(1000);
-                System.out.println("Item " + i + scan.nextLine());
+                System.out.println("Item " + i + " = " + scanner.nextLine());
             }
              */
+
             int index = 1;
-            while(scan.hasNextLine()) {
-                System.out.println("Item " + index++ + scan.hasNextLine());
+            while(scanner.hasNextLine()){
+                System.out.println("Item " + index++ + " = " + scanner.nextLine());
             }
 
-        }catch(Exception e){
+        }catch (Exception e){
             e.printStackTrace();
         }
         finally{
             file.delete();
         }
-        System.out.println("End of Program!");
+
+        System.out.println("End of the program!");
     }
 }
