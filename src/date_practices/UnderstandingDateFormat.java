@@ -6,6 +6,18 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class UnderstandingDateFormat {
+
+    ///* We can format the date using SimpleDateFormat class and get below formats:
+    //yyyy-MM-dd     -> 2021-07-15
+    //MM/dd/yyyy     -> 07/15/2021
+    //dd-MMM-yyyy        ->     15-Jul-2021
+    //E, MMM dd yyyy -> Thu, Jul 15 2021
+    //hh:mm:ss a     -> 08:33:27 PM
+    //h:mm a            ->     8:37 PM
+    //EEE           ->     Thu
+    //EEEE          ->     Thursday
+    //*/
+
     public static void main(String[] args) {
 
         Date currentDate = new Date();
