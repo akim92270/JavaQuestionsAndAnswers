@@ -2,6 +2,8 @@ package enums;
 
 public class Constants {
 
+    //Enums are used with Constants ex: Gender, TShirtSizes, Level, Months, Frequencies
+
     public enum Gender{
         FEMALE,
         MALE,
