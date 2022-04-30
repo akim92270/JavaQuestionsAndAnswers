@@ -7,7 +7,7 @@ import java.util.Date;
 
 public class UnderstandingDateFormat {
 
-    ///* We can format the date using SimpleDateFormat class and get below formats:
+    /* We can format the date using SimpleDateFormat class and get below formats:
     //yyyy-MM-dd     -> 2021-07-15
     //MM/dd/yyyy     -> 07/15/2021
     //dd-MMM-yyyy        ->     15-Jul-2021
@@ -16,7 +16,11 @@ public class UnderstandingDateFormat {
     //h:mm a            ->     8:37 PM
     //EEE           ->     Thu
     //EEEE          ->     Thursday
-    //*/
+    //
+    // https://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html/
+
+     */
+
 
     public static void main(String[] args) {
 
