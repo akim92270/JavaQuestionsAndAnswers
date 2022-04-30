@@ -15,5 +15,20 @@ public class TraversingEnums {
         for(Constants.Months month : Constants.Months.values()){
             System.out.println(month);
         }
+
+        //Traverse TShirtSize
+        for(Constants.TShirtSize TShirtSize : Constants.TShirtSize.values()){
+            System.out.println(TShirtSize);
+        }
+
+        //Traverse Level
+        for(Constants.Level Level : Constants.Level.values()){
+            System.out.println(Level);
+        }
+
+        //Traverse Frequencies
+        for(Constants.Frequencies Frequencies : Constants.Frequencies.values()){
+            System.out.println(Frequencies);
+        }
     }
 }
