@@ -12,7 +12,7 @@ public class TraversingEnums {
         }
 
         //Traverse Months
-        for(Month month : Month.values()){
+        for(Constants.Months month : Constants.Months.values()){
             System.out.println(month);
         }
     }
