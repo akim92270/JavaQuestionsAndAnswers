@@ -1,7 +1,5 @@
 package homeworks;
 
-import sun.java2d.pipe.SpanShapeRenderer;
-
 import java.text.SimpleDateFormat;
 import java.util.Arrays;
 import java.util.Date;
