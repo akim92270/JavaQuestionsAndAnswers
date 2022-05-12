@@ -83,21 +83,18 @@ public class HomeworkR4 {
     }
 
     //Task 8
-    public static int countPrimes(int[] a) {
+    public static int countPrimes(int[] a){
         int count = 0;
-        for (int e : a) {
+        for (int element : a){
             boolean isPrime = true;
-            if (e < 2) continue;
-            for (int i = 0; i < e; i++) {
-                if (e % i == 0) {
+            if (element < 2) continue;
+            for (int i = 2; i < element; i++){
+                if (element % i == 0) {
                     isPrime = false;
                     break;
                 }
-                if (isPrime) count++;
-            }
-            return count;
-        }
-        return count;
+            } if (isPrime) count++;
+        } return count;
     }
 
     public static void main(String[] args) {
