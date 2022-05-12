@@ -1,7 +1,5 @@
 package enums;
 
-import java.time.Month;
-
 public class TraversingEnums {
     //For-each is another array traversing technique like for loop, while loop, do-while loop introduced in Java5.
 
