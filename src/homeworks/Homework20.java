@@ -41,14 +41,19 @@ public class Homework20 {
     }
 
     //Task-5
-    /*public static String reverseSentence(String str) { //Java is fun
-        String first = str.substring(0, str.indexOf(" "));
-        String last = str.substring(str.lastIndexOf(" ") + 1);
-        String middle = str.substring(str.indexOf(" ") + 1, str.lastIndexOf(" "));
+    public static String reverseSentence(String str) {
+        //str = "There is a sentence"
+        if(!str.trim().contains(" ")) return "There is not enough words!";
 
-        return last + middle + first;
+        StringBuilder sb = new StringBuilder();
+        //str.trim().split("\\s+") ---> ["There", "is", "a", "sentence"] ---> "Sentence a is this"
+        String[] strArr = str.trim().split("\\s+");
+        for (int i = strArr.length - 1; i >= 0; i--) {
+            sb.append(strArr[i].toLowerCase() + " ");
+        }
+        return sb.substring(0,1).toUpperCase() + sb.substring(1).trim();
     }
-     */
+
 
     //Task-6
     public static String removeStringSpecialsDigit_1(String str) {
@@ -77,12 +82,12 @@ public class Homework20 {
 
     //Task-9
     public static ArrayList<String> noXInVariables(ArrayList<String> arr){
-        ArrayList<String> newArr = new ArrayList<>();
-        for (String s : arr) {
-            String s1 = s.replaceAll("[xX]", "");
-            if (s1.length() > 0) newArr.add(s1);
+        for (int i = 0; i < arr.size(); i++) {
+            String noXElement = arr.get(i).replaceAll("[xX]", "");
+            if(noXElement.isEmpty()) arr.remove(i--);
+            else arr.set(i, noXElement);
         }
-        return newArr;
+        return arr;
     }
 
 
